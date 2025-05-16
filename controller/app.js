@@ -114,5 +114,7 @@ function getValue(){
     
 }
 
+getValue();
+
 counter = 0;
 const intervalId = setInterval(function(){doLoop(20000, intervalId, getValue)}, 5000)
