@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITHA DASHBOARD</title>
+    <link rel="stylesheet" href="./style/tailwindout.css">
+</head>
+<body class="bg-[#D3D3D3] flex flex-col justify-center items-center h-screen">
+    <div class="bg-[#F2F2F2] max-w-[70vw] min-w-[50vw] py-[0.5vh] px-[2vw] rounded-t-[2vw]">
+        <h1 class="oswald-semibold text-[6vh] text-[#313131] my-[0]">FITHA DASHBOARD</h1>
+    </div>
+    <div class="flex flex-col-reverse justify-between items-center bg-[#F2F2F2] mt-[3vh] max-w-[70vw] min-w-[50vw] max-h-[60vh] min-h-[40vh]">
+        <div class="bg-[#456AFF] py-[0] px-[0.5vw] w-full">
+            <h4 class="oswald-regular text-[5vh]">CAM</h4>
+        </div>
+        <img class="h-[10vh] w-[10vh] mt-[12vh]" src="./img/CamOffIcon.png" alt="CamNotFound">
+    </div>
+    <div class="flex justify-between items-center mt-[3vh] max-w-[70vw] min-w-[50vw] max-h-[40vh] min-h-[30vh]">
+        <div class="flex flex-col-reverse justify-between items-center bg-[#F2F2F2] w-[48.3%] h-full">
+            <div class="bg-[#4B4B4B] py-[0] px-[0.5vw] w-full">
+                <h4 class="oswald-regular text-[5vh]">SMOKE</h4>
+            </div>
+            <h2 class="oswald-regular text-[#4B4B4B] text-[10vh]" id="smoke-value">20%</h2>
+            <div class="flex py-[0.5vh] px-[0.5vw] w-full flex-row-reverse">
+                <img id="smoke-symbol" class ="h-[4vh] w-[4vh]" src="./img/ModerateSymbol.png" alt="value-condition-moderate">
+            </div>
+        </div>
+        <div class="flex flex-col-reverse justify-between items-center bg-[#F2F2F2] w-[48.3%] h-full">
+            <div class="bg-[#FF4545] py-[0] px-[0.5vw] w-full">
+                <h4 class="oswald-regular text-[5vh]">FIRE</h4>
+            </div>
+            <div class="w-full h-full flex justify-around items-center">
+                <div id="flame-1" class="w-[5vw] h-full flex flex-col-reverse justify-between items-center pb-[4vh] pt-[0.5vh]">
+                    <h2 class="oswald-regular text-[#FF4545] my-[0] text-[4vh]" id="flame-value-1">125</h2>
+                    <h2 class="oswald-regular text-[#FF4545] mb-[0] mt-[0.5vh] text-[4vh]">#1</h2>
+                    <img id="flame-symbol-1" class ="h-[4vh] w-[4vh]" src="./img/ModerateSymbol.png" alt="value-condition-moderate">
+                </div>
+                <div id="flame-2" class="w-[5vw] h-full flex flex-col-reverse justify-between items-center pb-[4vh] pt-[0.5vh]">
+                    <h2 class="oswald-regular text-[#FF4545] my-[0] text-[4vh]" id="flame-value-2">125</h2>
+                    <h2 class="oswald-regular text-[#FF4545] mb-[0] mt-[0.5vh] text-[4vh]">#2</h2>
+                    <img id="flame-symbol-2" class ="h-[4vh] w-[4vh]" src="./img/ModerateSymbol.png" alt="value-condition-moderate">
+                </div>
+                <div id="flame-3" class="w-[5vw] h-full flex flex-col-reverse justify-between items-center pb-[4vh] pt-[0.5vh]">
+                    <h2 class="oswald-regular text-[#FF4545] my-[0] text-[4vh]" id="flame-value-3">125</h2>
+                    <h2 class="oswald-regular text-[#FF4545] mb-[0] mt-[0.5vh] text-[4vh]">#3</h2>
+                    <img id="flame-symbol-3" class ="h-[4vh] w-[4vh]" src="./img/ModerateSymbol.png" alt="value-condition-moderate">
+                </div>
+                <div id="flame-4" class="w-[5vw] h-full flex flex-col-reverse justify-between items-center pb-[4vh] pt-[0.5vh]">
+                    <h2 class="oswald-regular text-[#FF4545] my-[0] text-[4vh]" id="flame-value-4">125</h2>
+                    <h2 class="oswald-regular text-[#FF4545] mb-[0] mt-[0.5vh] text-[4vh]">#4</h2>
+                    <img id="flame-symbol-4" class ="h-[4vh] w-[4vh]" src="./img/ModerateSymbol.png" alt="value-condition-moderate">
+                </div>
+                <div id="flame-5" class="w-[5vw] h-full flex flex-col-reverse justify-between items-center pb-[4vh] pt-[0.5vh]">
+                    <h2 class="oswald-regular text-[#FF4545] my-[0] text-[4vh]" id="flame-value-5">125</h2>
+                    <h2 class="oswald-regular text-[#FF4545] mb-[0] mt-[0.5vh] text-[4vh]">#5</h2>
+                    <img id="flame-symbol-5" class ="h-[4vh] w-[4vh]" src="./img/ModerateSymbol.png" alt="value-condition-moderate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./controller/app.js"></script>
+</body>
+</html>
